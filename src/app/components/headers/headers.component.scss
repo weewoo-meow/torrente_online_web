@@ -22,25 +22,32 @@
 }
 
 .img-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    width: 30%;
+    min-width: 334px;
+    min-height: 200px;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  width: 30%;
-  min-width: 334px;
-  min-height: 200px;
-  height: auto;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .img-btn:hover {
   filter: brightness(0.5);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 8px currentColor);
+  transition: filter 0.3s ease;
 }
 
 .img-btn-active{
   filter: brightness(0.5);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5))
+          drop-shadow(0 0 8px currentColor);
+  transition: filter 0.3s ease;
 }
 
 .overlay-text {
