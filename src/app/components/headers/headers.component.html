@@ -13,19 +13,19 @@
       class="img-btn"
       [class]="{
         'img-btn': true,
-        'img-btn-active': actual_path.indexOf('/downloads') >= 0
+        'img-btn-active': actual_path.indexOf('downloads') >= 0
       }"
       [style]="getImgBoxStyle('disc.png')"
       routerLink="/downloads"
       
     >
-      <a class="overlay-text" >Descarga el juego</a>
+      <a class="overlay-text" >Descarga el juego  {{actual_path.indexOf('downloads') >= 0}}</a>
     </div>
     <div
       class="img-btn"
       [class]="{
         'img-btn': true,
-        'img-btn-active': actual_path.indexOf('/downloads') >= 0
+        'img-btn-active': actual_path.indexOf('matchmaker') >= 0
       }"
       [style]="getImgBoxStyle('matchmaker.png')"
       routerLink="/matchmaker"
@@ -36,7 +36,7 @@
       class="img-btn"
       [class]="{
         'img-btn': true,
-        'img-btn-active': actual_path.indexOf('/downloads') >= 0
+        'img-btn-active': actual_path.indexOf('community') >= 0
       }"
       [style]="getImgBoxStyle('scoreboard.png')"
       routerLink="/community"
