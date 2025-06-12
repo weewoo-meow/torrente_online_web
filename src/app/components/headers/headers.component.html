@@ -1,0 +1,49 @@
+<div class="welcome">
+  <h2>Bienvenido a tolservidor.es</h2>
+</div>
+<span class="description">  
+    Hola caballeros y bienvenido a la web de tolservidor.es, el proyecto de la
+    resurrección del matchmaker de Torrente-Online. De momento el proyecto está en
+    versión alfa, pero se puede probar jugar en ello.
+</span>
+<div class="header-container">
+
+  <div class="img-btn-bar">
+    <div
+      class="img-btn"
+      [class]="{
+        'img-btn': true,
+        'img-btn-active': actual_path.indexOf('downloads') >= 0
+      }"
+      [style]="getImgBoxStyle('disc.png')"
+      routerLink="/downloads"
+      
+    >
+      <a class="overlay-text" >Descarga el juego</a>
+    </div>
+    <div
+      class="img-btn"
+      [class]="{
+        'img-btn': true,
+        'img-btn-active': actual_path.indexOf('matchmaker') >= 0
+      }"
+      [style]="getImgBoxStyle('matchmaker.png')"
+      routerLink="/matchmaker"
+    >
+      <div class="overlay-text">Configura para matchmaker</div>
+    </div>
+    <div
+      class="img-btn"
+      [class]="{
+        'img-btn': true,
+        'img-btn-active': actual_path.indexOf('community') >= 0
+      }"
+      [style]="getImgBoxStyle('scoreboard.png')"
+      routerLink="/community"
+    >
+      <div class="overlay-text">Únete a la comunidad</div>
+    </div>
+  </div>
+ 
+ 
+</div>
