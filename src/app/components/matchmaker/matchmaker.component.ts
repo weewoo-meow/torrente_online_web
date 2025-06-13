@@ -11,6 +11,9 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class MatchmakerComponent {
   downloadBatch() {
-    window.open('/torrenteParche.bat');
+      const link = document.createElement('a');
+      link.href = '/torrenteparche.bat'; // Asegúrate de que el .bat esté en 'src/assets'
+      link.download = 'torrenteparche.bat';
+      link.click();
   }
 }

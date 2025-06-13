@@ -11,6 +11,10 @@ import { MatIconModule } from '@angular/material/icon';
 })
 export class DownloadsComponent {
   download() {
-    window.open('/torrenteonline.exe');
+    const link = document.createElement('a');
+    link.href = '/torrenteonline.exe'; // Asegúrate de que el .bat esté en 'src/assets'
+    link.download = 'torrenteonline.exe';
+    link.click();
+
   }
 }
