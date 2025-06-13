@@ -13,6 +13,6 @@ jobs:
         run: |
           export NVM_DIR="$HOME/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-          nvm use lts
+          nvm use --lts
           npm run build
           cp dist/torrenteservidores/browser/* /var/www/
