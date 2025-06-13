@@ -9,39 +9,53 @@
 <div class="header-container">
 
   <div class="img-btn-bar">
+    <div class="wrapper-img-btn"[class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('downloads') >= 0
+      }">
     <div
-      class="img-btn"
+      class="img-btn-base"
       [class]="{
-        'img-btn': true,
+        'img-btn': actual_path.indexOf('downloads') == -1,
         'img-btn-active': actual_path.indexOf('downloads') >= 0
       }"
       [style]="getImgBoxStyle('disc.png')"
       routerLink="/downloads"
-      
     >
-      <a class="overlay-text" >Descarga el juego</a>
+      
     </div>
+    <span class="overlay-text">Descarga el juego</span>
+    </div>
+    <div class="wrapper-img-btn"[class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('matchmaker') >= 0
+      }">
     <div
-      class="img-btn"
+      class="img-btn-base"
       [class]="{
-        'img-btn': true,
+        'img-btn': actual_path.indexOf('matchmaker') == -1,
         'img-btn-active': actual_path.indexOf('matchmaker') >= 0
       }"
       [style]="getImgBoxStyle('matchmaker.png')"
       routerLink="/matchmaker"
     >
-      <div class="overlay-text">Configura para matchmaker</div>
+      
     </div>
+    <span class="overlay-text">Configura para matchmaker</span>
+    </div>
+    <div class="wrapper-img-btn" class="wrapper-img-btn"[class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('community') >= 0
+      }">
     <div
-      class="img-btn"
+      class="img-btn-base"
       [class]="{
-        'img-btn': true,
+        'img-btn': actual_path.indexOf('community') == -1,
         'img-btn-active': actual_path.indexOf('community') >= 0
       }"
       [style]="getImgBoxStyle('scoreboard.png')"
       routerLink="/community"
     >
-      <div class="overlay-text">Únete a la comunidad</div>
+      
+    </div>
+    <span class="overlay-text">Únete a la comunidad</span>
     </div>
   </div>
  
