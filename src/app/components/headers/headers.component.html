@@ -57,6 +57,22 @@
     </div>
     <span class="overlay-text">Únete a la comunidad</span>
     </div>
+    <div class="wrapper-img-btn" class="wrapper-img-btn"[class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('party_list') >= 0
+      }">
+    <div
+      class="img-btn-base"
+      [class]="{
+        'img-btn': actual_path.indexOf('party_list') == -1,
+        'img-btn-active': actual_path.indexOf('party_list') >= 0
+      }"
+      [style]="getImgBoxStyle('scoreboard.png')"
+      routerLink="/party_list"
+    >
+      
+    </div>
+    <span class="overlay-text">Listado de partidas disponible</span>
+    </div>
   </div>
  
  
