@@ -1,14 +1,14 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { env } from ''
-import { Observable } from 'rxjs';
+import { arr_party_list_mockup } from './party-list.mockup';
+import { Observable, of } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
 export class PartyListService {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
   get_party_list():Observable<any>{
-    return this.http.get('http://127.0.0.1:3333/party_list')
+    return of(arr_party_list_mockup)//this.http.get('http://127.0.0.1:3333/party_list')
   }
 }
