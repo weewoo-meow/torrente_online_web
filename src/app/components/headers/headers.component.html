@@ -2,21 +2,21 @@
   <span id="title">Bienvenido a torrenteservidor.es</span >
 </div>
 <span class="description">  
-    Hola caballeros y bienvenido a la web de torrenteservidor.es, el proyecto de la
-    resurrección del matchmaker de Torrente-Online. De momento el proyecto está en
-    versión alfa, pero se puede probar jugar en ello.
+    Hola caballeros y bienvenido a la web de torrenteservidor.es el proyecto de la
+    resurrección del matchmaker de Torrente-Online. <br> De momento el proyecto está en
+    versión Beta, pero se puede probar jugar.
 </span>
 <div class="header-container">
 
   <div class="img-btn-bar">
     <div class="wrapper-img-btn"[class]="{
-        'wrapper-img-btn-active': actual_path.indexOf('downloads') >= 0
+        'wrapper-img-btn-active': actual_path === 'downloads'
       }">
     <div
       class="img-btn-base"
       [class]="{
-        'img-btn': actual_path.indexOf('downloads') == -1,
-        'img-btn-active': actual_path.indexOf('downloads') >= 0
+        'img-btn':  actual_path !== 'downloads',
+        'img-btn-active':  actual_path === 'downloads'
       }"
       [style]="getImgBoxStyle('disc.png')"
       routerLink="/downloads"
@@ -24,6 +24,22 @@
       
     </div>
     <span class="overlay-text">Descarga el juego</span>
+    </div>
+    <div class="wrapper-img-btn"[class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('downloads_dedicated') >= 0
+      }">
+      <div
+        class="img-btn-base"
+        [class]="{
+          'img-btn': actual_path.indexOf('downloads_dedicated') == -1,
+          'img-btn-active': actual_path.indexOf('downloads_dedicated') >= 0
+        }"
+        [style]="getImgBoxStyle('disc_blue.PNG')"
+        routerLink="/downloads_dedicated"
+      >
+      
+    </div>
+    <span class="overlay-text">Servidor Dedicado</span>
     </div>
     <div class="wrapper-img-btn"[class]="{
         'wrapper-img-btn-active': actual_path.indexOf('matchmaker') >= 0
@@ -41,6 +57,7 @@
     </div>
     <span class="overlay-text">Configura para matchmaker</span>
     </div>
+
     <div class="wrapper-img-btn" class="wrapper-img-btn"[class]="{
         'wrapper-img-btn-active': actual_path.indexOf('community') >= 0
       }">
