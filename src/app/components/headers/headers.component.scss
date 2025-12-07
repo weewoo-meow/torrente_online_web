@@ -10,7 +10,7 @@
   text-align: center;
   vertical-align: center;
 }
-#title{
+#title {
   font-weight: bold;
 }
 .img-btn-bar {
@@ -20,32 +20,30 @@
   justify-content: space-evenly;
   gap: 2em;
   width: 100%;
-
 }
-.wrapper-img-btn{
-    position: relative;
-    display: inline-block;
-    border-radius: 12px;
-    width: 30%;
-    min-width: 340px;
-    overflow: hidden;
+.wrapper-img-btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 12px;
+  width: 30%;
+  min-width: 340px;
+  overflow: hidden;
 }
 .img-btn-base {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 7px;
-    width: 100%;
-    min-width: 334px;
-    min-height: 200px;
-    height: auto;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  width: 100%;
+  min-width: 334px;
+  min-height: 200px;
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .img-btn {
-    filter: blur(4px);
+  filter: blur(4px);
 }
 
 .img-btn:hover {
@@ -53,44 +51,41 @@
   transition: filter 0.3s ease;
 }
 
-.wrapper-img-btn-active{
+.wrapper-img-btn-active {
   filter: brightness(0.5);
   filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.5))
-          drop-shadow(0 0 8px currentColor);
+    drop-shadow(0 0 8px currentColor);
   transition: filter 0.3s ease;
-
 }
-.overlay-text{
-    text-align: center;
-    vertical-align: center;
-    position:absolute;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-weight: bold;
+.overlay-text {
+  text-align: center;
+  vertical-align: center;
+  position: absolute;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
 
-    z-index: 1;
-    pointer-events: none;
+  z-index: 1;
+  pointer-events: none;
 }
-
 
 code {
   font-size: 0.5em;
 }
 .header-container {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.description{
-    margin: 2px;
-    font-size: 1.5em;
-    text-align: center;
-    vertical-align: center;
+.description {
+  margin: 2px;
+  font-size: 1.5em;
+  text-align: center;
+  vertical-align: center;
 }
-

@@ -15,21 +15,21 @@ body {
   gap: 5px;
   height: 100%;
 }
-app-headers{
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2em;
+app-headers {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
 }
-app-root{
-    width: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 2em;
-    height: 100%;
+app-root {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+  height: 100%;
 }

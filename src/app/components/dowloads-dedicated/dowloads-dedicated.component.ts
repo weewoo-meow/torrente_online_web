@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-dowloads-dedicated',
   imports: [MatButtonModule, MatDividerModule, MatIconModule],
   templateUrl: './dowloads-dedicated.component.html',
-  styleUrl: './dowloads-dedicated.component.scss'
+  styleUrl: './dowloads-dedicated.component.scss',
 })
 export class DowloadsDedicatedComponent {
   download_dedicated() {
@@ -15,6 +15,5 @@ export class DowloadsDedicatedComponent {
     link.href = '/tol_dedicated_server.rar'; // Asegúrate de que el .bat esté en 'src/assets'
     link.download = 'tol_dedicated_server.rar';
     link.click();
-
   }
 }

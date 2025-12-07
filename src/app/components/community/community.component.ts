@@ -6,7 +6,13 @@ import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-community',
-  imports: [MatIcon, CdkCopyToClipboard, MatButtonModule, MatDividerModule, MatIconModule],
+  imports: [
+    MatIcon,
+    CdkCopyToClipboard,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+  ],
   templateUrl: './community.component.html',
   styleUrl: './community.component.scss',
 })

@@ -7,7 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-downloads',
   imports: [MatButtonModule, MatDividerModule, MatIconModule],
   templateUrl: './downloads.component.html',
-  styleUrl: './downloads.component.scss'
+  styleUrl: './downloads.component.scss',
 })
 export class DownloadsComponent {
   download() {
@@ -15,6 +15,5 @@ export class DownloadsComponent {
     link.href = '/torrenteonline.exe'; // Asegúrate de que el .bat esté en 'src/assets'
     link.download = 'torrenteonline.exe';
     link.click();
-
   }
 }
