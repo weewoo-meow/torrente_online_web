@@ -1,0 +1,53 @@
+    body {
+      font-family: monospace;
+      background: radial-gradient(circle, #ffe66d, #d4a928);
+
+    }
+
+    .tabla-scroll {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 150, 0.3);
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    }
+
+    thead {
+      background-color: rgba(255, 230, 100, 0.6);
+      border-top: 2px solid #000;
+      border-bottom: 2px solid #000;
+    }
+
+    th, td {
+
+      text-align: center;
+      border-bottom: 1px solid #000;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+
+    .scroll-container {
+      max-height: 200px; /* Altura fija del área scrollable */
+      overflow-y: auto;
+      border-bottom: 2px solid #000;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    .scroll-container::-webkit-scrollbar-thumb {
+      background-color: #c59d17;
+      border-radius: 5px;
+    }
+
+    .scroll-container::-webkit-scrollbar-track {
+      background-color: #f0e083;
+    }
+
+    tbody tr:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+    }

@@ -1,0 +1,30 @@
+
+<div class="scroll-container">
+    <table class="tabla-scroll">
+        <thead>
+            <tr>
+                <th>Nombre de la partida</th>
+                <th>Escenario</th>
+                <th>Jugadores</th>
+                <th>Tiempo</th>
+                <th>Ping</th>
+            </tr>
+        </thead>        
+        <tbody>
+            <!-- Aquí puedes repetir las filas para probar el scroll -->
+            @if(partyList$ | async; as partyList){
+                @for(party of partyList.arr_length; track party.name){
+         
+                    <tr>
+                        <td>{{party.name}}</td>
+
+                        <td>{{party.map}}</td>
+                        <td>{{party.players}}</td>
+                        <td>{{party.time}}</td>
+                        <td>{{party.ping}}</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

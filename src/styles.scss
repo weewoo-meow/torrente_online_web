@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 html {
-  height: 100%;
+  height: auto;
+  width: 100%;
+  min-width: 340px;
 }
 body {
   margin: 0;
@@ -14,11 +16,22 @@ body {
   height: 100%;
 }
 app-headers{
-    height: 100%;
+    height: auto;
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 2em;
+}
+app-root{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2em;
+    height: 100%;
+}
+app-party-list{
+  width: 95%;
 }
