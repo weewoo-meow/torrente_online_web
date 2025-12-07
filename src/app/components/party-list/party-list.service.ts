@@ -7,8 +7,8 @@ import { Observable, of } from 'rxjs';
 })
 export class PartyListService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
   get_party_list():Observable<any>{
-    return of(arr_party_list_mockup)//this.http.get('http://127.0.0.1:3333/party_list')
+    return this.http.get('http://127.0.0.1:3000/party_list')
   }
 }
