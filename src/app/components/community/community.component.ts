@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
-import { MatIconButton } from '@angular/material/button';
-import { MatIcon } from '@angular/material/icon';
+import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
 import { CdkCopyToClipboard } from '@angular/cdk/clipboard';
+import { MatDividerModule } from '@angular/material/divider';
 
 @Component({
   selector: 'app-community',
-  imports: [MatIcon, MatIconButton, CdkCopyToClipboard],
+  imports: [
+    MatIcon,
+    CdkCopyToClipboard,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+  ],
   templateUrl: './community.component.html',
   styleUrl: './community.component.scss',
 })

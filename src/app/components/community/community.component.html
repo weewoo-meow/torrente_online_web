@@ -1,12 +1,19 @@
 <div class="command-container">
-  Puedes encontrarnos en Discord y WhatsApp. Únete a nuestro Discord y te
-  traemos a la base de operación.
-  <button
-    mat-icon-button
+  <span>
+    Puedes encontrarnos en Discord y WhatsApp. Únete a nuestro Discord y te
+    traemos a la base de operación.<br />
+  </span>
+
+  <a
+    mat-fab
+    extended=""
     [cdkCopyToClipboard]="discord"
     aria-label="Copy command"
+    [href]="discord"
+    target="_blank"
+    rel="noopener noreferrer"
   >
     <mat-icon>content_copy</mat-icon>
-  </button>
-  <code>{{ discord }}</code>
+    {{ discord }}
+  </a>
 </div>

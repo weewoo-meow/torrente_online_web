@@ -1,49 +1,83 @@
 <div class="welcome">
-  <h2>Bienvenido a tolservidor.es</h2>
+  <span id="title">Bienvenido a torrenteservidor.es</span>
 </div>
-<span class="description">  
-    Hola caballeros y bienvenido a la web de tolservidor.es, el proyecto de la
-    resurrección del matchmaker de Torrente-Online. De momento el proyecto está en
-    versión alfa, pero se puede probar jugar en ello.
+<span class="description">
+  Hola caballeros y bienvenido a la web de torrenteservidor.es el proyecto de la
+  resurrección del matchmaker de Torrente-Online. <br />
+  De momento el proyecto está en versión Beta, pero se puede probar jugar.
 </span>
 <div class="header-container">
-
   <div class="img-btn-bar">
     <div
-      class="img-btn"
+      class="wrapper-img-btn"
       [class]="{
-        'img-btn': true,
-        'img-btn-active': actual_path.indexOf('downloads') >= 0
+        'wrapper-img-btn-active': actual_path === 'downloads',
       }"
-      [style]="getImgBoxStyle('disc.png')"
-      routerLink="/downloads"
-      
     >
-      <a class="overlay-text" >Descarga el juego</a>
+      <div
+        class="img-btn-base"
+        [class]="{
+          'img-btn': actual_path !== 'downloads',
+          'img-btn-active': actual_path === 'downloads',
+        }"
+        [style]="getImgBoxStyle('disc.png')"
+        routerLink="/downloads"
+      ></div>
+      <span class="overlay-text">Descarga el juego</span>
     </div>
     <div
-      class="img-btn"
+      class="wrapper-img-btn"
       [class]="{
-        'img-btn': true,
-        'img-btn-active': actual_path.indexOf('matchmaker') >= 0
+        'wrapper-img-btn-active':
+          actual_path.indexOf('downloads_dedicated') >= 0,
       }"
-      [style]="getImgBoxStyle('matchmaker.png')"
-      routerLink="/matchmaker"
     >
-      <div class="overlay-text">Configura para matchmaker</div>
+      <div
+        class="img-btn-base"
+        [class]="{
+          'img-btn': actual_path.indexOf('downloads_dedicated') == -1,
+          'img-btn-active': actual_path.indexOf('downloads_dedicated') >= 0,
+        }"
+        [style]="getImgBoxStyle('disc_blue.PNG')"
+        routerLink="/downloads_dedicated"
+      ></div>
+      <span class="overlay-text">Servidor Dedicado</span>
     </div>
     <div
-      class="img-btn"
+      class="wrapper-img-btn"
       [class]="{
-        'img-btn': true,
-        'img-btn-active': actual_path.indexOf('community') >= 0
+        'wrapper-img-btn-active': actual_path.indexOf('matchmaker') >= 0,
       }"
-      [style]="getImgBoxStyle('scoreboard.png')"
-      routerLink="/community"
     >
-      <div class="overlay-text">Únete a la comunidad</div>
+      <div
+        class="img-btn-base"
+        [class]="{
+          'img-btn': actual_path.indexOf('matchmaker') == -1,
+          'img-btn-active': actual_path.indexOf('matchmaker') >= 0,
+        }"
+        [style]="getImgBoxStyle('matchmaker.png')"
+        routerLink="/matchmaker"
+      ></div>
+      <span class="overlay-text">Configura para matchmaker</span>
+    </div>
+
+    <div
+      class="wrapper-img-btn"
+      class="wrapper-img-btn"
+      [class]="{
+        'wrapper-img-btn-active': actual_path.indexOf('community') >= 0,
+      }"
+    >
+      <div
+        class="img-btn-base"
+        [class]="{
+          'img-btn': actual_path.indexOf('community') == -1,
+          'img-btn-active': actual_path.indexOf('community') >= 0,
+        }"
+        [style]="getImgBoxStyle('scoreboard.png')"
+        routerLink="/community"
+      ></div>
+      <span class="overlay-text">Únete a la comunidad</span>
     </div>
   </div>
- 
- 
 </div>
